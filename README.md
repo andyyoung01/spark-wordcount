@@ -1,6 +1,6 @@
 # spark-wordcount-example
 
-> 此repository是[Apache Mesos(10)-使用Chronos创建复杂任务](https://andyyoung01.github.io/2016/08/05/Apache-Mesos-10-使用Chronos创建复杂任务/)的示例代码。对Mesos in Action的[wordcount-example](https://github.com/rji/mesos-in-action-code-samples/tree/master/wordcount-example)的代码进行了小的变动。
+> 此repository是[Apache Mesos(10)-使用Chronos创建复杂任务](https://andyyoung01.github.io/2016/08/09/Apache-Mesos-10-使用Chronos创建复杂任务/)的示例代码。对Mesos in Action的[wordcount-example](https://github.com/rji/mesos-in-action-code-samples/tree/master/wordcount-example)的代码进行了小的变动。
 
 This is an example Spark job that reads a copy of Leo Tolstoy's
 [War and Peace][war-and-peace-pg] from HDFS, counts the number of times each

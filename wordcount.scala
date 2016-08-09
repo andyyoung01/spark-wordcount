@@ -10,11 +10,11 @@ object WarAndPeaceWordCount {
     val conf = new SparkConf().setAppName("War and Peace Word Count")
     val sc = new SparkContext(conf)
 
-    val textFile = sc.textFile("warandpeace.txt")
+    val textFile = sc.textFile(s"$basepath/warandpeace.txt")
 
     val words = textFile.flatMap(line => line.split(" "))
     val counts = words.map(word => (word, 1)).reduceByKey(_ + _)
-    counts.saveAsTextFile(s"/user/root/result")
+    counts.saveAsTextFile(s"$basepath/result")
 
     sc.stop()
   }
